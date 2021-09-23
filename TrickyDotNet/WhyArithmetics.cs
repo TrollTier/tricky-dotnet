@@ -45,5 +45,14 @@ namespace TrickyDotNet
 
             Assert.True(result > 0, result.ToString());
         }
+
+        [Fact]
+        public void Why_Isnt_This_Bigger()
+        {
+            float var1 = 0.9f * 100f;
+            float var2 = 0.9f * 99.99999999f;
+
+            Assert.True(var1 > var2);
+        }
     }
 }
